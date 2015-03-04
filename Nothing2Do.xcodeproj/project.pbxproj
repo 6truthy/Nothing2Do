@@ -14,6 +14,10 @@
 		74FB8AA41AA6BA4D00849706 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74FB8AA31AA6BA4D00849706 /* Images.xcassets */; };
 		74FB8AA71AA6BA4D00849706 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74FB8AA51AA6BA4D00849706 /* LaunchScreen.xib */; };
 		74FB8AB31AA6BA4D00849706 /* Nothing2DoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FB8AB21AA6BA4D00849706 /* Nothing2DoTests.m */; };
+		74FB8AC01AA6C80600849706 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FB8ABD1AA6C80600849706 /* FLAnimatedImage.m */; };
+		74FB8AC11AA6C80600849706 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FB8ABF1AA6C80600849706 /* FLAnimatedImageView.m */; };
+		74FB8AC41AA6C83A00849706 /* rock.gif in Resources */ = {isa = PBXBuildFile; fileRef = 74FB8AC31AA6C83A00849706 /* rock.gif */; };
+		74FB8AC61AA6D1D600849706 /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 74FB8AC51AA6D1D600849706 /* 1.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,12 @@
 		74FB8AAC1AA6BA4D00849706 /* Nothing2DoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Nothing2DoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74FB8AB11AA6BA4D00849706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74FB8AB21AA6BA4D00849706 /* Nothing2DoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nothing2DoTests.m; sourceTree = "<group>"; };
+		74FB8ABC1AA6C80600849706 /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
+		74FB8ABD1AA6C80600849706 /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
+		74FB8ABE1AA6C80600849706 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
+		74FB8ABF1AA6C80600849706 /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
+		74FB8AC31AA6C83A00849706 /* rock.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rock.gif; sourceTree = "<group>"; };
+		74FB8AC51AA6D1D600849706 /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 		74FB8A8A1AA6BA4D00849706 = {
 			isa = PBXGroup;
 			children = (
+				74FB8AC21AA6C81500849706 /* Image */,
 				74FB8A951AA6BA4D00849706 /* Nothing2Do */,
 				74FB8AAF1AA6BA4D00849706 /* Nothing2DoTests */,
 				74FB8A941AA6BA4D00849706 /* Products */,
@@ -81,6 +92,10 @@
 		74FB8A951AA6BA4D00849706 /* Nothing2Do */ = {
 			isa = PBXGroup;
 			children = (
+				74FB8ABC1AA6C80600849706 /* FLAnimatedImage.h */,
+				74FB8ABD1AA6C80600849706 /* FLAnimatedImage.m */,
+				74FB8ABE1AA6C80600849706 /* FLAnimatedImageView.h */,
+				74FB8ABF1AA6C80600849706 /* FLAnimatedImageView.m */,
 				74FB8A9A1AA6BA4D00849706 /* AppDelegate.h */,
 				74FB8A9B1AA6BA4D00849706 /* AppDelegate.m */,
 				74FB8A9D1AA6BA4D00849706 /* ViewController.h */,
@@ -117,6 +132,15 @@
 				74FB8AB11AA6BA4D00849706 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74FB8AC21AA6C81500849706 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				74FB8AC51AA6D1D600849706 /* 1.gif */,
+				74FB8AC31AA6C83A00849706 /* rock.gif */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +226,8 @@
 				74FB8AA21AA6BA4D00849706 /* Main.storyboard in Resources */,
 				74FB8AA71AA6BA4D00849706 /* LaunchScreen.xib in Resources */,
 				74FB8AA41AA6BA4D00849706 /* Images.xcassets in Resources */,
+				74FB8AC61AA6D1D600849706 /* 1.gif in Resources */,
+				74FB8AC41AA6C83A00849706 /* rock.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74FB8AC01AA6C80600849706 /* FLAnimatedImage.m in Sources */,
 				74FB8A9F1AA6BA4D00849706 /* ViewController.m in Sources */,
+				74FB8AC11AA6C80600849706 /* FLAnimatedImageView.m in Sources */,
 				74FB8A9C1AA6BA4D00849706 /* AppDelegate.m in Sources */,
 				74FB8A991AA6BA4D00849706 /* main.m in Sources */,
 			);
@@ -344,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Nothing2Do/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Nothing2Do/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
